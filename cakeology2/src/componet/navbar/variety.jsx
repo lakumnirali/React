@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const variety = () => {
-    return (
-        <div>
-            variety
-        </div>
-    );
-};
+class variety extends Component {
+    render() {
+        return (
+            <div>
+               variety 
+            </div>
+        );
+    }
+}
 
 export default variety;

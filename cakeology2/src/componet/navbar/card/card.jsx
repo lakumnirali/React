@@ -11,6 +11,8 @@ import {
 } from 'mdb-react-ui-kit';
 export default function App() {
   return (
+<div>
+   
 
     <MDBCard style={{ maxWidth: '540px' }}>
       <MDBRow className='g-0'>
@@ -31,6 +33,6 @@ export default function App() {
         </MDBCol>
       </MDBRow>
     </MDBCard>
-    
+    </div>
   );
 }

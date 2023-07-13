@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Pricing = () => {
-    return (
-        <div>
-            Pricing
-        </div>
-    );
-};
+class pricing extends Component {
+    render() {
+        return (
+            <div>
+                pricing
+            </div>
+        );
+    }
+}
 
-export default Pricing;
+export default pricing;

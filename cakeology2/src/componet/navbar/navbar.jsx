@@ -17,7 +17,7 @@ export default function App() {
   const [showNavColor, setShowNavColor] = useState(false);
  return (
     <>
-      <MDBNavbar expand='lg' dark bgColor='warning'>
+      <MDBNavbar expand='lg' className='dark' >
         <MDBContainer fluid>
           <MDBNavbarBrand href='#'>
             <img src={logo} alt="" className='logo'/>
