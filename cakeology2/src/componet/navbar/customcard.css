@@ -1,3 +1,19 @@
-.header>p{
-    display: inline-block;
+.header > p {
+  display: inline-block;
+}
+.row {
+  background-color: rgb(243, 216, 233);
+}
+.header {
+  text-align: center;
+  /* padding-top: 70px;   */
+  font-size: 50px;
+  font-weight: 100;
+}
+#p2 {
+  color: rgba(212, 70, 157, 0.678);
+}
+.card1cakeology{
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
