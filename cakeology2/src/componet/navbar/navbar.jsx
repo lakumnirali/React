@@ -7,7 +7,7 @@ import {
   MDBIcon,
   MDBNavbarNav,
   MDBNavbarItem,
-  MDBNavbarLink,
+  // MDBNavbarLink,
   MDBNavbarToggler,
   MDBNavbarBrand,
   MDBCollapse
@@ -15,12 +15,12 @@ import {
 import { Link } from 'react-router-dom';
 export default function App() {
   const [showNavColor, setShowNavColor] = useState(false);
- return (
+  return (
     <>
       <MDBNavbar expand='lg' className='dark' >
         <MDBContainer fluid>
           <MDBNavbarBrand href='#'>
-            <img src={logo} alt="" className='logo'/>
+            <img src={logo} alt="" className='logo' />
           </MDBNavbarBrand>
           <MDBNavbarToggler
             type='button'
@@ -52,6 +52,6 @@ export default function App() {
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
-      </>
+    </>
   );
 }
