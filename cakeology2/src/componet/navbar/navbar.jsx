@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../../asset/logo.png'
 import './app.css'
+// import './app.js'
 import {
   MDBNavbar,
   MDBContainer,
@@ -10,9 +11,14 @@ import {
   // MDBNavbarLink,
   MDBNavbarToggler,
   MDBNavbarBrand,
+  // MDBBtn,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem,
   MDBCollapse
 } from 'mdb-react-ui-kit';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 export default function App() {
   const [showNavColor, setShowNavColor] = useState(false);
   return (
@@ -34,20 +40,38 @@ export default function App() {
           </MDBNavbarToggler>
           <MDBCollapse show={showNavColor} navbar>
             <MDBNavbarNav className='me-auto mb-2 mb-lg-0 t'>
-              <MDBNavbarItem className='active '>
-                <Link className='nav-link navtext' aria-current='page' to='/'>
+              <MDBNavbarItem className=' '>
+                <NavLink className='nav-link  navtext' aria-current='page' to='/'>
                   Home
-                </Link>
+                </NavLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <Link className='nav-link navtext' to='/variety'>variety</Link>
+                <NavLink className='nav-link navtext' to='/variety'>variety</NavLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <Link className='nav-link navtext' to='/pricing'>Pricing</Link>
+                <NavLink className='nav-link navtext' to='/pricing'>Pricing</NavLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <Link className='nav-link navtext' to='/aboutus'>About</Link>
+                <NavLink className='nav-link navtext' to='/aboutus'>About</NavLink>
               </MDBNavbarItem>
+              <MDBNavbarItem>
+              <MDBDropdown>
+                <MDBDropdownToggle tag='a' className='nav-link navtext' role='button'>
+                  Dropdown
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem >
+                    <NavLink className='nav-link dtext' to='/variety'>variety</NavLink>
+                  </MDBDropdownItem>
+                  <MDBDropdownItem >
+                   <NavLink className='nav-link dtext' to='/pricing'>pricing</NavLink>
+                    </MDBDropdownItem>
+                  <MDBDropdownItem >
+                   <NavLink className='nav-link dtext' to='/aboutus'>aboutus</NavLink>
+                   </MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBContainer>
