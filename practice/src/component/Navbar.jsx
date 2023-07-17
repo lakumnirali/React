@@ -1,70 +1,74 @@
 import React, { useState } from 'react';
 import {
-  MDBNavbar,
   MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
   MDBIcon,
   MDBNavbarNav,
   MDBNavbarItem,
-  MDBNavbarLink,
-  MDBNavbarToggler,
-  MDBNavbarBrand,
+//   MDBNavbarLink,
+  MDBBtn,
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
   MDBDropdownItem,
-  MDBCollapse
+  MDBCollapse,
 } from 'mdb-react-ui-kit';
-import {Link} from "react-router-dom"
-
+import {NavLink} from 'react-router-dom'
 export default function App() {
-  const [showNavColor, setShowNavColor] = useState(false);
+  const [showBasic, setShowBasic] = useState(false);
+
   return (
-    <>
-      <MDBNavbar expand='lg' dark bgColor='primary'>
-        <MDBContainer fluid>
-          <MDBNavbarBrand href='#'>Navbar</MDBNavbarBrand>
-          <MDBNavbarToggler
-            type='button'
-            data-target='#navbarColor02'
-            aria-controls='navbarColor02'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-            onClick={() => setShowNavColor(!showNavColor)}
-          >
-            <MDBIcon icon='bars' fas />
-          </MDBNavbarToggler>
-          <MDBCollapse show={showNavColor} navbar>
-            <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
-              <MDBNavbarItem className='active'>
-                <Link aria-current='page' className='nav-link ' to='/'>
-                  Home
-                </Link>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <Link className='nav-link ' to='/features'>Features</Link>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <Link className='nav-link ' to='/pricing'>Pricing</Link>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <Link className='nav-link ' to='/about'>About</Link>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
+    <MDBNavbar expand='lg' light bgColor='light'>
+      <MDBContainer fluid>
+        <MDBNavbarBrand href='#'>Brand</MDBNavbarBrand>
+
+        <MDBNavbarToggler
+          aria-controls='navbarSupportedContent'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+          onClick={() => setShowBasic(!showBasic)}
+        >
+          <MDBIcon icon='bars' fas />
+        </MDBNavbarToggler>
+
+        <MDBCollapse navbar show={showBasic}>
+          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+            <MDBNavbarItem>
+              <NavLink className='nav-link' active aria-current='page' to='/'>
+                Home
+              </NavLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <NavLink className='nav-link' to='/link '>Link</NavLink>
+            </MDBNavbarItem>
+
+            <MDBNavbarItem>
               <MDBDropdown>
-                <MDBDropdownToggle tag='a' className='nav-link' role='button' to= '/Dropdown'>
+                <MDBDropdownToggle tag='a' className='nav-link' role='button'>
                   Dropdown
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem link >Features</MDBDropdownItem>
-                  <MDBDropdownItem link>Pricing</MDBDropdownItem>
-                  <MDBDropdownItem link>About</MDBDropdownItem>
-                </MDBDropdownMenu>
+                <MDBDropdownItem >
+                    <NavLink className='nav-link' to='/'>Home</NavLink>
+                  </MDBDropdownItem>
+                <MDBDropdownItem >
+                    <NavLink className='nav-link' to='/link'>Link</NavLink>
+                  </MDBDropdownItem>
+                  </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavbarItem>
-            </MDBNavbarNav>
-          </MDBCollapse>
-        </MDBContainer>
-      </MDBNavbar> 
-         </>
+
+           
+          </MDBNavbarNav>
+
+          <form className='d-flex input-group w-auto'>
+            <input type='search' className='form-control' placeholder='Type query' aria-label='Search' />
+            <MDBBtn color='primary'>Search</MDBBtn>
+          </form>
+        </MDBCollapse>
+      </MDBContainer>
+    </MDBNavbar>
   );
 }

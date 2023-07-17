@@ -1,11 +1,10 @@
 import React from 'react';
-import Mainrouter from './component/Mainrouter.jsx'
 import { RouterProvider } from 'react-router-dom';
+import Mainrouter from './component/Router.jsx'
 const App = () => {
   return (
     <>
-      <RouterProvider router={Mainrouter}/>
-      {/* <><Mainrouter/></> */}
+<RouterProvider router = {Mainrouter}/>
     </>
   );
 };

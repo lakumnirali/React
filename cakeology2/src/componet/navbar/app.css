@@ -1,10 +1,18 @@
 .logo{
     width: 75px;
 }
+.active {
+   color: #970909 !important;
+}
 .navtext{
     color: #f5f5f5;
     font-size: 20px;
 }
 .dark{
     background-color: rgba(212, 70, 157, 0.678);
+}
+.dtext:hover{
+    color: #5f0c0c;
+    background-color: rgba(194, 191, 26, 0.678);
+
 }
