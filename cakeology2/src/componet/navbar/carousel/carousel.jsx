@@ -9,7 +9,7 @@ import Slider from "react-slick";
 export default class AutoPlay extends Component {
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,

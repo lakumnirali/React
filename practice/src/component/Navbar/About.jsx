@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Link = () => {
+const About = () => {
     return (
         <div>
-            fkjdfgjhdfg
+            fbjhbfbdflasdbfjhdbkjbf
         </div>
     );
 };
 
-export default Link;
+export default About;

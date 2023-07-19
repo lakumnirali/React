@@ -7,7 +7,7 @@ import {
   MDBIcon,
   MDBNavbarNav,
   MDBNavbarItem,
-//   MDBNavbarLink,
+  MDBNavbarLink,
   MDBBtn,
   MDBDropdown,
   MDBDropdownToggle,
@@ -15,7 +15,7 @@ import {
   MDBDropdownItem,
   MDBCollapse,
 } from 'mdb-react-ui-kit';
-import {NavLink} from 'react-router-dom'
+
 export default function App() {
   const [showBasic, setShowBasic] = useState(false);
 
@@ -36,12 +36,12 @@ export default function App() {
         <MDBCollapse navbar show={showBasic}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
             <MDBNavbarItem>
-              <NavLink className='nav-link' active aria-current='page' to='/'>
+              <MDBNavbarLink active aria-current='page' href='#'>
                 Home
-              </NavLink>
+              </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <NavLink className='nav-link' to='/link '>Link</NavLink>
+              <MDBNavbarLink href='#'>About</MDBNavbarLink>
             </MDBNavbarItem>
 
             <MDBNavbarItem>
@@ -50,17 +50,12 @@ export default function App() {
                   Dropdown
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                <MDBDropdownItem >
-                    <NavLink className='nav-link' to='/'>Home</NavLink>
-                  </MDBDropdownItem>
-                <MDBDropdownItem >
-                    <NavLink className='nav-link' to='/link'>Link</NavLink>
-                  </MDBDropdownItem>
-                  </MDBDropdownMenu>
+                  <MDBDropdownItem link>Action</MDBDropdownItem>
+                  <MDBDropdownItem link>Another action</MDBDropdownItem>
+                  <MDBDropdownItem link>Something else here</MDBDropdownItem>
+                </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavbarItem>
-
-           
           </MDBNavbarNav>
 
           <form className='d-flex input-group w-auto'>

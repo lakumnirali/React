@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { RouterProvider } from "react-router-dom";
-import routerdta from './router.jsx'
+import Routerdata from './component/Router.jsx'
 class App extends Component {
   render() {
     return (
       <>
-      <RouterProvider router={routerdata}/>
+      <RouterProvider router={Routerdata}/>
       </>
     );
   }
