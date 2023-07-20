@@ -1,5 +1,5 @@
 .logo{
-    width: 75px;
+    width: 70px;
 }
 .active {
    color: #970909 !important;
@@ -10,6 +10,7 @@
 }
 .dark{
     background-color: rgba(212, 70, 157, 0.678);
+    box-shadow: 0px 10px 15px rgb(202, 30, 87) inset;
 }
 .dtext:hover{
     color: #5f0c0c;

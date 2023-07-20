@@ -12,7 +12,7 @@ const About = () => {
                    <Link to='classcompo'><h3>Class Component</h3></Link>
                     </div>
 
-                <div className="col-lg-6 text-center">
+                <div className="col-lg-6">
                    <Link to='funcompo'><h3>Fucntional Component</h3></Link>
                    </div>
             </div>

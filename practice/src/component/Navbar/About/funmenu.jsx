@@ -3,9 +3,9 @@ import { Link, Outlet } from 'react-router-dom';
 
 const funmenu = () => {
     return (
-        <div>
+        <div className=' col-mg-6 offset-6'>
            <ol>
-            <li><Link to='funintro'>funfum</Link></li>
+            <li ><Link to='funintro'>funfum</Link></li>
            </ol>
            <Outlet></Outlet>
         </div>
