@@ -8,6 +8,7 @@ const ClassMenu = () => {
            <ol>
             <li ><Link to='classintro'>introofclasscomponent</Link></li>
             <li ><Link to='statincompo'>stateinclasscomponent</Link></li>
+            <li ><Link to='propsincompo'>propsinclasscomponent</Link></li>
            </ol> 
            </div>
            <Outlet></Outlet>

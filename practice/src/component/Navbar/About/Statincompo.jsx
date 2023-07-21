@@ -2,25 +2,18 @@ import React, { Component } from 'react';
 
 class statincompo extends Component {
     state = {
-        name:'rit',
-        age:9,
+        name: 'nirali',
     };
-    uname="somthingfrom dm "
-    clikHandlecustom=()=>{
-        this.setState({name:"testing"})
-        console.log("called");
-        this.uname='test'
+    funarro = () => {
+        this.setState({ name: "raxit" })
     }
     render() {
-        let username ="test"
+        // let username = "rit"
         return (
             <>
-             <h2>state in class compo</h2>   
-             <p>state is</p>
-                username is {this.uname}
-             {this.state.name}
-             <button onClick={()=>{username="testing"}}>change variable value</button>
-             <button onClick={this.clikHandlecustom}>click</button>
+                my name is {this.state.name}
+                {/* <button onClick={() =>  this.name}>change name</button> */}
+                <button onClick={this.funarro}>click</button>
             </>
         );
     }
