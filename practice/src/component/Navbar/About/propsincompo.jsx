@@ -1,74 +1,37 @@
-import React from 'react';
-import {
-  MDBCard,
-  MDBCardImage,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardFooter,
-  MDBRow,
-  MDBCol
-} from 'mdb-react-ui-kit';
+import React, { Component } from 'react';
+import Childcard from './childcard.jsx'
+import Cimg2 from '../../../cimg2.jpg'
+class propsincompo extends Component {
+    render() {
+        var path = process.env.PUBLIC_URL;
+        var image = "/image/img1.jpg";
 
-export default function App() {
-  return (
-    <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
-      <MDBCol>
-        <MDBCard className='h-100'>
-          <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/044.webp'
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
-            <MDBCardText>
-              This is a longer card with supporting text below as a natural lead-in to additional content.
-              This content is a little bit longer.
-            </MDBCardText>
-          </MDBCardBody>
-          <MDBCardFooter>
-            <small className='text-muted'>Last updated 3 mins ago</small>
-          </MDBCardFooter>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className='h-100'>
-          <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/043.webp'
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
-            <MDBCardText>
-              This card has supporting text below as a natural lead-in to additional content.
-            </MDBCardText>
-          </MDBCardBody>
-          <MDBCardFooter>
-            <small className='text-muted'>Last updated 3 mins ago</small>
-          </MDBCardFooter>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className='h-100'>
-          <MDBCardImage
-            src='https://mdbootstrap.com/img/new/standard/city/042.webp'
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
-            <MDBCardText>
-              This is a wider card with supporting text below as a natural lead-in to additional content. This
-              card has even longer content than the first to show that equal height action.
-            </MDBCardText>
-          </MDBCardBody>
-          <MDBCardFooter>
-            <small className='text-muted'>Last updated 3 mins ago</small>
-          </MDBCardFooter>
-        </MDBCard>
-      </MDBCol>
-    </MDBRow>
-  );
+        return (
+            <div>
+                <div className="row">
+                    <div className="col-lg-4 mt-2">
+                        < Childcard imgdata='https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' />
+                    </div>
+                    <div className="col-lg-4 mt-2">
+                        < Childcard imgdata={process.env.PUBLIC_URL + '/image/img1.jpg'} />
+                        {/* < Childcard imgdata={path + image} /> */}
+                    </div>
+                    <div className="col-lg-4 mt-2">
+                        < Childcard imgdata={Cimg2} />
+                    </div>
+                    <div className="col-lg-4 mt-2">
+                        < Childcard imgdata={'/image/img3.jpg'}/>
+                    </div>
+                    <div className="col-lg-4 mt-2">
+                        < Childcard />
+                    </div>
+                    <div className="col-lg-4 mt-2">
+                        < Childcard />
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
+
+export default propsincompo;
