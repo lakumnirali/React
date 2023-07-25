@@ -38,27 +38,26 @@ export default function App() {
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
             <MDBNavbarItem>
               <MDBNavbarLink>
-                <Link className='nav-link' to='/'>Home</Link>
+                <Link className='Nav-link' to='/'>Home</Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink>
-                <Link className='nav-link' to='/about'>About</Link>
+                <Link className='Nav-link' to='/about'>About</Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
 
-            <MDBNavbarItem>
-              <MDBDropdown>
-                <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+            <MDBNavbarItem className='Nav-link'>
+              <MDBDropdown >
+                <MDBDropdownToggle tag='a' className='Nav-link' role='button'>
                   Dropdown
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem>
-                    <Link className='nav-link' to='/'>Home</Link>
+                    <Link   className='Nav-link' to='/'>Home</Link>
                      </MDBDropdownItem>
 
-                  <MDBDropdownItem> <Link className='nav-link' to='/about'>About</Link></MDBDropdownItem>
-                  <MDBDropdownItem link>Something else here</MDBDropdownItem>
+                  <MDBDropdownItem> <Link   className='Nav-link' to='/about'>About</Link></MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavbarItem>
