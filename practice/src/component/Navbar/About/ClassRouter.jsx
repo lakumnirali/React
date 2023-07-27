@@ -6,6 +6,7 @@ import Statincompo from './Statincompo.jsx'
 import Propsincompo from './propsincompo.jsx'
 import Lifecycleinclass from './lifecycleinclass.jsx'
 import Restvsspread from './restvsspread.jsx'
+import Composistionvsinheritance from './composistionvsinheritance.jsx'
 class ClassRouter extends Component {
     render() {
         return (
@@ -16,6 +17,7 @@ class ClassRouter extends Component {
                     <Route path="/propsincompo" element={<Propsincompo />} />
                     <Route path="/lifecycleinclass" element={<Lifecycleinclass />} />
                     <Route path="/restvsspread" element={<Restvsspread />} />
+                    <Route path="/composistionvsinheritance" element={<Composistionvsinheritance />} />
                 </Route>
             </Routes>
         );
