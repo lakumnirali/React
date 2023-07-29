@@ -55,6 +55,7 @@ mkdir newfolder</p>
              <p>Step 6: Now open the IDE of your choice for eg.  Visual studio code and open the folder where you have installed the react app newfolder (in the above example)  inside the folder you will see your app’s name reactapp (In our example). Use the terminal and move inside your app name folder.Use command  cd reactapp (your app name)</p>
               <p>Step 7: To start your app run the below command npm start </p>
               <h3>Linux Operating System</h3>
+              <p>Linux is a Unix-like, open source and community-developed operating system (OS) for computers, servers, mainframes, mobile devices and embedded devices. It is supported on almost every major computer platform, including x86, ARM and SPARC, making it one of the most widely supported operating systems.</p>
             </div>
         );
     }
