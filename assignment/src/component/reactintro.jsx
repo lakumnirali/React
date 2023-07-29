@@ -35,27 +35,31 @@ class reactintro extends Component {
                 <ul><h1><li> What is Role of Node Js in react Js?</li></h1></ul>
                 <p>ReactJS uses Node.js, a JavaScript runtime, to build your JavaScript code.</p>
                 <p>Basically, the ReactJS is a JavaScript framework which needs the help of node js and npm(Package manager) to tell the native side(Android/iOS) that these are packages I need to run my app. And it adds all the dependencies needed to run the app.</p>
-               <p>Nodejs is not compulsorily required to run react code or build react apps. It is required to use so many tools that makes react development easy and avoid doing things manually. For example - Tool chain create-react-app is a npm package(which in turn require nodejs to be installed on system) which setup development environment and makes so many things already configured.</p>
-               <ul><h1><li> What is CLI command In React Js?</li></h1></ul>
-              <p>Command-line interfaces (CLIs) built-in Node. js authorize automating repetitive tasks while leveraging the Node. js ecosystem. Package managers like npm and yarn are distributed and ingested across multiple platforms.</p>
-              <ul><h1><li> What is Components in React Js?</li></h1></ul>
-              <p>Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.</p>
-              <ul><h1><li> What is Header and Content Components in React Js?</li></h1></ul>
-              <p>Headers are compositions that extend standard navbar functionalities. They contain additional components like a jumbotron, sub-navbar, or image covers which serve as a containers for extra navigation elements - usually links, forms, or call-to-action buttons.</p>
-              <ul><h1><li> How to install React Js on Windows, Linux Operating System? How to Install
-NPM and How to check version of NPM?</li></h1></ul>
-               <h3>Windows</h3>
-            <p>Step 1: Install Node.js installer for windows. Click on this link. Here install the LTS version (the one present on the left). Once downloaded open NodeJS without disturbing other settings, click on the Next button until it’s completely installed.</p>
-            <p>Step 2: Open command prompt  to check whether it is completely installed or not type the command - </p>
-            <p>Step 3: Now in the terminal run the below command: npm install -g create-react-app  </p>
-            <p>Step 4:Now Create a new folder where you want to make your react app using the below command: 
+                <p>Nodejs is not compulsorily required to run react code or build react apps. It is required to use so many tools that makes react development easy and avoid doing things manually. For example - Tool chain create-react-app is a npm package(which in turn require nodejs to be installed on system) which setup development environment and makes so many things already configured.</p>
+                <ul><h1><li> What is CLI command In React Js?</li></h1></ul>
+                <p>Command-line interfaces (CLIs) built-in Node. js authorize automating repetitive tasks while leveraging the Node. js ecosystem. Package managers like npm and yarn are distributed and ingested across multiple platforms.</p>
+                <ul><h1><li> What is Components in React Js?</li></h1></ul>
+                <p>Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.</p>
+                <ul><h1><li> What is Header and Content Components in React Js?</li></h1></ul>
+                <p>Headers are compositions that extend standard navbar functionalities. They contain additional components like a jumbotron, sub-navbar, or image covers which serve as a containers for extra navigation elements - usually links, forms, or call-to-action buttons.</p>
+                <ul><h1><li> How to install React Js on Windows, Linux Operating System? How to Install
+                    NPM and How to check version of NPM?</li></h1></ul>
+                <h3>Windows</h3>
+                <p>Step 1: Install Node.js installer for windows. Click on this link. Here install the LTS version (the one present on the left). Once downloaded open NodeJS without disturbing other settings, click on the Next button until it’s completely installed.</p>
+                <p>Step 2: Open command prompt  to check whether it is completely installed or not type the command - </p>
+                <p>Step 3: Now in the terminal run the below command: npm install -g create-react-app  </p>
+                <p>Step 4:Now Create a new folder where you want to make your react app using the below command:
 
-mkdir newfolder</p>
-<p>Step 5: Now inside this folder run the command –create-react-app reactfirst YOUR_APP_NAME</p>
-             <p>Step 6: Now open the IDE of your choice for eg.  Visual studio code and open the folder where you have installed the react app newfolder (in the above example)  inside the folder you will see your app’s name reactapp (In our example). Use the terminal and move inside your app name folder.Use command  cd reactapp (your app name)</p>
-              <p>Step 7: To start your app run the below command npm start </p>
-              <h3>Linux Operating System</h3>
-              <p>Linux is a Unix-like, open source and community-developed operating system (OS) for computers, servers, mainframes, mobile devices and embedded devices. It is supported on almost every major computer platform, including x86, ARM and SPARC, making it one of the most widely supported operating systems.</p>
+                    mkdir newfolder</p>
+                <p>Step 5: Now inside this folder run the command –create-react-app reactfirst YOUR_APP_NAME</p>
+                <p>Step 6: Now open the IDE of your choice for eg.  Visual studio code and open the folder where you have installed the react app newfolder (in the above example)  inside the folder you will see your app’s name reactapp (In our example). Use the terminal and move inside your app name folder.Use command  cd reactapp (your app name)</p>
+                <p>Step 7: To start your app run the below command npm start </p>
+                <h3>Linux Operating System</h3>
+                <p>Linux is a Unix-like, open source and community-developed operating system (OS) for computers, servers, mainframes, mobile devices and embedded devices. It is supported on almost every major computer platform, including x86, ARM and SPARC, making it one of the most widely supported operating systems.</p>
+                <ul><h1><li>How to check version of React Js?</li></h1></ul>
+                <p>To check which React version is your project using you need to open the package. json. Take a look under the dependencies section. It should list all of the dependencies of your project and one of those should be React.</p>
+                <ul><h1><li>How to change in components of React Js?</li></h1></ul>
+                <p>Update in state: The state change can be from a prop or setState change to update a variable(say). The component gets the updated state and React re-renders the component to reflect the change on the app.</p>
             </div>
         );
     }
