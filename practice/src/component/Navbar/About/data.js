@@ -1,12 +1,12 @@
-// export const Warriors=[{
-// name:nirali,
-// profesitione:frontenddevloper,
-// birthdate:10/8/2000
-// },
-// {
-//     name:rit,
-//     profesitione:studyinfiveclass,
-//     birthdate:13/8/2013
+export const Warriors=[{
+id:0,
+name:"Mohandas vvhjgxgvkjhzd",
+birthdate:"4/5/2000"
+},
+{
+ id:1,
+ name:"Vallabhbhai Patel",
+ birthdate:"4/5/2000"
 
-// }
-// ]
+}
+]
