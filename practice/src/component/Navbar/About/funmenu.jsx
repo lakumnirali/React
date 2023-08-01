@@ -7,6 +7,7 @@ const funmenu = () => {
            <ol>
             <li ><Link to='funintro'>functionintro</Link></li>
             <li ><Link to='stateinfun'>Stateinfunctioncomponent</Link></li>
+            <li ><Link to='propsinfun'>propsinfunctioncomponent</Link></li>
            </ol>
            <Outlet></Outlet>
         </div>
