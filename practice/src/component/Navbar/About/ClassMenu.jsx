@@ -11,6 +11,7 @@ const ClassMenu = () => {
                     <li ><Link to='propsincompo'>propsinclasscomponent</Link></li>
                     <li ><Link to='lifecycleinclass'>lifecycleinclasscomponent</Link></li>
                     <li ><Link to='Restvsspread'>Restvsspreadinclasscomponent</Link></li>
+                    <li ><Link to='list'>listinclasscomponenet</Link></li>
                     <li ><Link to='composistionvsinheritance'>Composition vs Inheritance in Class Compo</Link></li>
                 </ol>
             </div>
