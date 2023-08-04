@@ -1,4 +1,31 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+// import {
+//     MDBCard,
+//     MDBCardBody,
+//     MDBCardTitle,
+//     MDBCardText,
+//     MDBCardImage,
+//     MDBBtn
+//   } from 'mdb-react-ui-kit';
+// class Childcard extends Component {
+//     render() {
+//         return (
+//               <MDBCard>
+//         <MDBCardImage src={this.props.imgdata} position='top'  alt='...' />
+//       <MDBCardBody>
+//         <MDBCardTitle>nr</MDBCardTitle>
+//         <MDBCardText>
+//           Some quick example text to build on the card title and make up the bulk of the card's content.
+//         </MDBCardText>
+//         <MDBBtn href='#'>Button</MDBBtn>
+//       </MDBCardBody>
+//     </MDBCard>  
+//         );
+//     }
+// }
+// export default Childcard;
+// 
+// import React, { Component } from 'react';
 import {
     MDBCard,
     MDBCardBody,
@@ -7,11 +34,13 @@ import {
     MDBCardImage,
     MDBBtn
   } from 'mdb-react-ui-kit';
-class Childcard extends Component {
-    render() {
-        return (
-              <MDBCard>
-        <MDBCardImage src={this.props.imgdata} position='top'  alt='...' />
+import React from 'react';
+
+const childcard = (props) => {
+  return (
+    <div>
+        <MDBCard>
+        <MDBCardImage src={props.imgdata} position='top'  alt='...' />
       <MDBCardBody>
         <MDBCardTitle>nr</MDBCardTitle>
         <MDBCardText>
@@ -20,7 +49,8 @@ class Childcard extends Component {
         <MDBBtn href='#'>Button</MDBBtn>
       </MDBCardBody>
     </MDBCard>  
-        );
-    }
-}
-export default Childcard;
+    </div>
+  );
+};
+
+export default childcard;
