@@ -4,6 +4,8 @@ import Funmenu from './funmenu.jsx'
 import Funintro from './funintro.jsx'
 import Stateinfun from './stateinfun.jsx'
 import Propsinfun from './propsinfun.jsx'
+import Useeffectinfunctionalcompo from './useeffectinfunctionalcompo.jsx'
+import Styledinfunctinalcompo from './styledinfunctinalcompo.jsx'
 class FunRouter extends Component {
     render() {
         return (
@@ -12,6 +14,8 @@ class FunRouter extends Component {
                 <Route path='/funintro' element={<Funintro />} />
                 <Route path='/stateinfun' element={<Stateinfun />} />
                 <Route path='/propsinfun' element={<Propsinfun />} />
+                <Route path='/useeffectinfunctionalcompo' element={<Useeffectinfunctionalcompo />} />
+                <Route path='/styledinfunctinalcompo' element={<Styledinfunctinalcompo />} />
                 <Route />
             </Routes>
         );
