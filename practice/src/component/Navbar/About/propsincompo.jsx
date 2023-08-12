@@ -23,10 +23,10 @@ class propsincompo extends Component {
                         < Childcard imgdata={'/image/img3.jpg'}/>
                     </div>
                     <div className="col-lg-4 mt-2">
-                        < Childcard />
+                        < Childcard imgdata='https://images.pexels.com/photos/2258536/pexels-photo-2258536.jpeg?auto=compress&cs=tinysrgb&w=600' />
                     </div>
                     <div className="col-lg-4 mt-2">
-                        < Childcard />
+                        < Childcard imgdata='https://images.pexels.com/photos/4101555/pexels-photo-4101555.jpeg?auto=compress&cs=tinysrgb&w=600'/>
                     </div>
                 </div>
             </div>
