@@ -4,7 +4,7 @@ const styledinfunctinalcompo = () => {
     return (
         <>
             <div className={styles.bhuri}>
-                <div class="card text-center card1" className={styles.ritu}>
+                <div className={styles.ritu + " card text-center card1 " +styles.other } >
                     <div class="card-header" className={styles.ritu}>Featured</div>
                     <div class="card-body"className={styles.ritu}>
                         <h5 class="card-title"className={styles.ritu}>Special title treatment</h5>
