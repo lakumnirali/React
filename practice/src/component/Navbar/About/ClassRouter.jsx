@@ -5,6 +5,8 @@ import ClassIntro from './ClassIntro.jsx'
 import Statincompo from './Statincompo.jsx'
 import Propsincompo from './propsincompo.jsx'
 import Lifecycleinclass from './lifecycleinclass.jsx'
+import Lifecycleloderexample from './lifecycleloderexample.jsx'
+import Conditionalrenderclassexample from './conditionalrenderclassexample.jsx'
 import Restvsspread from './restvsspread.jsx'
 import Controlledcompo from './controlledcompo.jsx'
 import UnControlledcompo from './uncontrolledcompo.jsx'
@@ -19,6 +21,8 @@ class ClassRouter extends Component {
                     <Route path="/statincompo" element={<Statincompo />} />
                     <Route path="/propsincompo" element={<Propsincompo />} />
                     <Route path="/lifecycleinclass" element={<Lifecycleinclass />} />
+                    <Route path="/lifecycleloderexample" element={<Lifecycleloderexample />} />
+                    <Route path="/conditionalrenderclassexample" element={<Conditionalrenderclassexample />} />
                     <Route path="/restvsspread" element={<Restvsspread />} />
                     <Route path="/controlledcompo" element={<Controlledcompo />} />
                     <Route path="/uncontrolledcompo" element={<UnControlledcompo />} />

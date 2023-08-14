@@ -10,6 +10,8 @@ const ClassMenu = () => {
                     <li ><Link to='statincompo'>stateinclasscomponent</Link></li>
                     <li ><Link to='propsincompo'>propsinclasscomponent</Link></li>
                     <li ><Link to='lifecycleinclass'>lifecycleinclasscomponent</Link></li>
+                    <li ><Link to='lifecycleloderexample'>Life cycle loder example</Link></li>
+                    <li ><Link to='conditionalrenderclassexample'>conditional render classexample</Link></li>
                     <li ><Link to='Restvsspread'>Restvsspreadinclasscomponent</Link></li>
                     <li ><Link to='controlledcompo'>Controlled Compo in Class Compo</Link></li>
                     <li ><Link to='uncontrolledcompo'>UnControlled Compo in Class Compo</Link></li>
