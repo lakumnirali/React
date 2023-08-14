@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
-import {Warriors} from './data.js'
+import {Indianbestcook} from './indianbestcook'
 class List extends Component {
     render() {
-        let listdata = Warriors.map((kaipan,index)=>{
-            console.log(kaipan.name);
+        let listdata=Indianbestcook.map ((anything,index)=>{
             return(
                 <li key={index}>
-                 <p><b>{kaipan.name}</b> {kaipan.birthdate}</p>
-                </li>
+                <div className='renderimg'>
+                <img  src={anything.ImageUrl} alt="" />
+                </div>
+               <p><b>{anything.Name}</b>&nbsp;<br />{anything.Born}<br/>{anything.Awards}</p>
+            </li>
             )
         })
         return (
             <>
-            <ul>
-                {listdata}
-                </ul></>
+                 <ul><h1><li>How to Create a List View in React Js?</li></h1></ul>
+              <ul className='renderlist'>
+             {listdata}
+              </ul>
+            </>
         );
     }
 }
