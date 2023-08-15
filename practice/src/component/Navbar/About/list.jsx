@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Indianbestcook} from './indianbestcook'
+import './list.css'
 class List extends Component {
     render() {
         let listdata=Indianbestcook.map ((anything,index)=>{
@@ -8,7 +9,7 @@ class List extends Component {
                 <div className='renderimg'>
                 <img  src={anything.ImageUrl} alt="" />
                 </div>
-               <p><b>{anything.Name}</b>&nbsp;<br />{anything.Born}<br/>{anything.Awards}</p>
+               <p><b>{anything.Name}</b>&nbsp;<br />{anything.Born}<br/>{anything.Aboutus}</p>
             </li>
             )
         })
