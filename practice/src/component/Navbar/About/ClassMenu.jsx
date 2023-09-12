@@ -17,6 +17,7 @@ const ClassMenu = () => {
                     <li ><Link to='controlledcompo'>Controlled Compo in Class Compo</Link></li>
                     <li ><Link to='uncontrolledcompo'>UnControlled Compo in Class Compo</Link></li>
                     <li ><Link to='composistionvsinheritance'>Composition vs Inheritance in Class Compo</Link></li>
+                    <li ><Link to='StateLiftingInClassCompo'>State Lifting In Class Compo</Link></li>
                 </ol>
             </div>
             <Outlet></Outlet>

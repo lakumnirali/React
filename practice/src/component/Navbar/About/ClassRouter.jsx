@@ -12,6 +12,7 @@ import Restvsspread from './restvsspread.jsx'
 import Controlledcompo from './controlledcompo.jsx'
 import UnControlledcompo from './uncontrolledcompo.jsx'
 import Composistionvsinheritance from './composistionvsinheritance.jsx'
+import StateLiftingInClassCompo from './stateLiftingInClassCompo.jsx'
 class ClassRouter extends Component {
     render() {
         return (
@@ -28,6 +29,7 @@ class ClassRouter extends Component {
                     <Route path="/controlledcompo" element={<Controlledcompo />} />
                     <Route path="/uncontrolledcompo" element={<UnControlledcompo />} />
                     <Route path="/composistionvsinheritance" element={<Composistionvsinheritance />} />
+                    <Route path="/stateLiftingInClassCompo" element={<StateLiftingInClassCompo />} />
                 </Route>
             </Routes>
         );
