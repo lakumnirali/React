@@ -4,6 +4,8 @@ import Module9 from './modulenine.jsx'
 import Module10 from './moduleten.jsx'
 import Module11 from './moduleeleven.jsx'
 import Module12 from './moduletwelve.jsx'
+import Classrouter from './moduleten/Classrouter.jsx'
+import Funrouter from './moduleten/Funrouter.jsx'
 const router =createBrowserRouter([
     {
         path:"/",
@@ -23,11 +25,11 @@ const router =createBrowserRouter([
         element:<><Navbar/><Module12/></>,
         children:[
            { path:"classcompo/*",
-             element:<><ClasscompoMenu/></>
+             element:<><Classrouter/></>
         },
         {
             path:"funcompo/*",
-            element:<><funcompoMenu/></>  
+            element:<><Funrouter/></>  
         }
         ]
     }
