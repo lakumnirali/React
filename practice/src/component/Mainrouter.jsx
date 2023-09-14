@@ -9,6 +9,7 @@ const Funcompomenu=React.lazy(()=>import('./Navbar/About/FunRouter.jsx'))
 const router = createBrowserRouter([
 
     {
+        
         path:"/",
         element:<><Navbar/><Home/></>
     },
