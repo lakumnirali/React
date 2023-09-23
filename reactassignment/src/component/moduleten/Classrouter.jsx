@@ -10,7 +10,6 @@ class Classrouter extends Component {
                <Route path='/' element={<Classmenu/>}/> 
                <Route path="/lifecycleinclass" element={<Lifecycleinclass />} />
                <Route path="/lifecycleloderexample" element={<Lifecycleloderexample />} />
-
             </Routes>
         );
     }
