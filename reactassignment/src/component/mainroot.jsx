@@ -13,8 +13,16 @@ const router =createBrowserRouter([
     },
     {
         path:"/moduleten",
-        element:<><Navbar/><Module10/></>
-
+        element:<><Navbar/><Module10/></>,
+        children:[
+            { path:"classcompo/*",
+              element:<><Classrouter/></>
+         },
+         {
+             path:"funcompo/*",
+             element:<><Funrouter/></>  
+         }
+         ]
     },
     {
         path:"/moduleeleven",
@@ -23,15 +31,7 @@ const router =createBrowserRouter([
     {
         path:"/moduletwelve",
         element:<><Navbar/><Module12/></>,
-        children:[
-           { path:"classcompo/*",
-             element:<><Classrouter/></>
-        },
-        {
-            path:"funcompo/*",
-            element:<><Funrouter/></>  
-        }
-        ]
+       
     }
 ])
 export default router

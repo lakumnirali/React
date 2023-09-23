@@ -17,7 +17,7 @@ class ClassRouter extends Component {
     render() {
         return (
             <Routes>
-                <Route path='/' element={<ClassMenu />}>
+                    <Route path='/' element={<ClassMenu />}>
                     <Route path="/classintro" element={<ClassIntro />} />
                     <Route path="/statincompo" element={<Statincompo />} />
                     <Route path="/propsincompo" element={<Propsincompo />} />

@@ -1,10 +1,11 @@
 import React from 'react';
-
+import { Route, Routes } from 'react-router-dom';
+import Funmenu from './funmenu'
 const Funrouter = () => {
     return (
-        <div>
-            funrouter
-        </div>
+        <Routes>
+           <Route path='/' element={Funmenu}/>
+        </Routes>
     );
 };
 
