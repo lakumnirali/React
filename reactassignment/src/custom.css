@@ -1,0 +1,13 @@
+section[class*="panel"]{
+    padding: 10px;  
+    border-radius: 8px;
+    margin: 20px;
+}
+.panel-dark{
+    background-color: rgb(38, 36, 36);
+    color: white;
+}
+.button-dark{
+    background-color: rgb(49, 59, 74);
+    color: seashell;
+}
