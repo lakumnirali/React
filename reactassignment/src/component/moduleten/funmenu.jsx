@@ -13,7 +13,14 @@ const Funmenu = () => {
             <li><Link to="useReducer">useReducer</Link></li>
             <li><Link to="useCallback">useCallback</Link></li>
             <li><Link to="useMemo">useMemo</Link></li>
+            <li><Link to="useuseref">useRef</Link></li>
+            <li><Link to="useimperativeHandle">useimperativeHandle</Link></li>
+            <li><Link to="useLayoutEffect">useLayoutEffect</Link></li>
+            <li><Link to="useDebugValue">useDebugValue</Link></li>
+            <li><Link to="useDeferredValue">useDeferredValue</Link></li>
+            <li><Link to="useId">useId</Link></li>
             
+
            </ol>
            <Outlet></Outlet>
         </div>
