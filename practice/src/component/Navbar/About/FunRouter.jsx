@@ -7,6 +7,7 @@ import Propsinfun from './propsinfun.jsx'
 import Useeffectinfunctionalcompo from './useeffectinfunctionalcompo.jsx'
 import Styledinfunctinalcompo from './styledinfunctinalcompo.jsx'
 import Usecallbaclfunctionalcompo from './usecallbaclfunctionalcompo.jsx'
+import Honneycombtask from './honneycombtask.jsx'
 class FunRouter extends Component {
     render() {
         return (
@@ -18,6 +19,7 @@ class FunRouter extends Component {
                 <Route path='/useeffectinfunctionalcompo' element={<Useeffectinfunctionalcompo />} />
                 <Route path='/styledinfunctinalcompo' element={<Styledinfunctinalcompo />} />
                 <Route path='/usecallbaclfunctionalcompo' element={<Usecallbaclfunctionalcompo />} />
+                <Route path='/honneycombtask' element={<Honneycombtask />} />
                 <Route />
             </Routes>
         );
