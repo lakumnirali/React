@@ -38,6 +38,6 @@ ImageUrl:"//im.rediff.com/sports/2018/apr/10hima.jpg?w=670&h=900"
     Name:"Mary Kom",
     Born: "24 November 1982, Kangathei",
     Awards: "Padma Vibhushan, Padma Bhushan, Padma Shri",
-    ImageUrl:"https://www.deccanherald.com/sites/dh/files/article_images/2020/04/01/PTI10_13_2019_000226B-min-1585731550.jpg"
+    ImageUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlUVI2ngoSOJFdrBsXeXHEIcL9O9mTK89t9g&usqp=CAU"
 }
 ]
