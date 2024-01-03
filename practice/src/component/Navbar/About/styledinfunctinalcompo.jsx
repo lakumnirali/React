@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './card1.module.css'
 const styledinfunctinalcompo = () => {
     return (
-        <>
+        <>        
             <div className={styles.bhuri}>
                 <div className={styles.ritu + " card text-center card1 " +styles.other } >
                     <div class="card-header" className={styles.ritu}>Featured</div>
