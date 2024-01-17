@@ -1,13 +1,10 @@
-// src/App.js
 import React from 'react';
-import TableSearch from './qunans.jsx';
-
-function App() {
+import Assignment from './assignment.jsx'
+function App(props) {
   return (
-    <div className="App">
-    <h1>qunans </h1>
-      <qunans />
-    </div>
+    <>
+    <Assignment/>
+    </>
   );
 }
 
