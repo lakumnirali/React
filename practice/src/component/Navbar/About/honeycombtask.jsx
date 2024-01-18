@@ -7,8 +7,8 @@ function Honeycombtask (props){
     await setele(data)
    }
     return (
-        <div>
-             {  (ele && ele.length) ?
+        <>
+              {(ele && ele.length) ?
             <table>
                 <thead>
                     <tr>
@@ -24,14 +24,11 @@ function Honeycombtask (props){
                         <td>{ele[3]}</td>
                     </tr>
                 </thead>
-            </table> 
-               }
-    
-          <div className="remaining-details mt-5">
-             <Honeycombtaskchild onAddHandler={parentFunction } /> 
-          </div>
-        </div>
+            </table> :"no data" }
+    <Honeycombtaskchild onAddHandler={parentFunction } /> 
+        
+        </>
     );
-}
+};
 
 export default Honeycombtask;
