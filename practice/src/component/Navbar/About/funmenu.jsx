@@ -8,9 +8,9 @@ const funmenu = () => {
             <li ><Link to='funintro'>functionintro</Link></li>
             <li ><Link to='stateinfun'>Stateinfunctioncomponent</Link></li>
             <li ><Link to='propsinfun'>propsinfunctioncomponent</Link></li>
-            <li><Link to="useeffectinfunctionalcompo">useEffect in Fucntional Compo</Link></li>
             <li><Link to="styledinfunctinalcompo">styled in functinal compo</Link></li>
             <li><Link to="usecallbaclfunctionalcompo">use callback functional compo</Link></li>
+            <li><Link to="Honeycombtask">Honey comb task</Link></li>
            
 
            </ol>

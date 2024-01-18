@@ -4,9 +4,9 @@ import Funmenu from './funmenu.jsx'
 import Funintro from './funintro.jsx'
 import Stateinfun from './stateinfun.jsx'
 import Propsinfun from './propsinfun.jsx'
-import Useeffectinfunctionalcompo from './useeffectinfunctionalcompo.jsx'
 import Styledinfunctinalcompo from './styledinfunctinalcompo.jsx'
 import Usecallbaclfunctionalcompo from './usecallbaclfunctionalcompo.jsx'
+import Honeycombtask from './honeycombtask.jsx'
 
 class FunRouter extends Component {
     render() {
@@ -16,9 +16,9 @@ class FunRouter extends Component {
                 <Route path='/funintro' element={<Funintro />} />
                 <Route path='/stateinfun' element={<Stateinfun />} />
                 <Route path='/propsinfun' element={<Propsinfun />} />
-                <Route path='/useeffectinfunctionalcompo' element={<Useeffectinfunctionalcompo />} />
                 <Route path='/styledinfunctinalcompo' element={<Styledinfunctinalcompo />} />
                 <Route path='/usecallbaclfunctionalcompo' element={<Usecallbaclfunctionalcompo />} />
+                <Route path='/honeycombtask' element={<Honeycombtask />} />
                 
                 <Route />
             </Routes>
