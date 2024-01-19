@@ -1,9 +1,15 @@
-import React, { useState }  from 'react';
-import { useEffect } from "react";
+import React, {forwardRef,useEffect, useImperativeHandle, useState }  from 'react';
 
-function Honeycombtaskchild(props) {
+const Honeycombtaskchild = forwardRef ((props,ref)=>{ 
     const[ele,setele]=useState({});
     const[ele2,setele2]=useState({});
+    useImperativeHandle(ref,()=>({
+        getAlert(){
+            console.log("called inside child from parant btn click");
+            let sufer = shuffle(arry);
+             setele(sufer[0]);
+        }
+    }));
       useEffect(()=>{
         //   console.log("called inside useEffect");
         let sufer = shuffle(arry);
@@ -34,6 +40,6 @@ function Honeycombtaskchild(props) {
            All the values of Array={(arry)}
         </>
     );
-}
+});
 
 export default Honeycombtaskchild;
