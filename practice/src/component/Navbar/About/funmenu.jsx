@@ -11,6 +11,7 @@ const funmenu = () => {
             <li><Link to="styledinfunctinalcompo">styled in functinal compo</Link></li>
             <li><Link to="usecallbaclfunctionalcompo">use callback functional compo</Link></li>
             <li><Link to="Honeycombtask">Honey comb task</Link></li>
+            <li><Link to="Usecontextcompo">usecontext functional compo</Link></li>
            
 
            </ol>
